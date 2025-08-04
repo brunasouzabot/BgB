@@ -4,158 +4,153 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia Rápido - Indicação 99Food</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f5f7fa;
       margin: 0;
+      background-color: #f7f7f7;
+      color: #000;
+    }
+    .hero {
+      background-color: #FFD700;
       padding: 40px 20px;
-      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-    h1 {
-      color: #111;
+    .hero-text {
+      font-size: 24px;
+      font-weight: 700;
       text-align: center;
-      font-size: 26px;
-      font-weight: 600;
-      margin-bottom: 10px;
     }
-    .subtitle {
+    .benefits {
+      background-color: #fff;
+      padding: 40px 20px;
       text-align: center;
-      font-size: 15px;
-      color: #666;
+    }
+    .benefits h2 {
+      font-size: 22px;
       margin-bottom: 30px;
     }
-    .info-box {
-      background-color: #fde7ef;
-      border-left: 4px solid #d81b60;
-      padding: 12px 16px;
-      border-radius: 6px;
-      margin: 20px auto;
-      max-width: 800px;
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
     }
-    .section-header {
-      background-color: #fff3cd;
-      border: 1px solid #ffeeba;
-      color: #111;
-      padding: 12px 20px;
-      margin: 40px auto 20px auto;
-      border-radius: 8px;
-      font-size: 18px;
-      font-weight: 600;
-      max-width: 800px;
-    }
-    .step {
-      background-color: #ffffff;
-      border: 1px solid #d0e4f7;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-      margin: 20px auto;
-      max-width: 800px;
-    }
-    .step strong {
-      display: inline-block;
-      font-size: 15px;
-      font-weight: 600;
-      color: #1976d2;
-      margin-bottom: 8px;
-    }
-    .step p {
-      font-size: 14px;
-      color: #444;
-    }
-    .step img {
-      width: 100%;
-      margin-top: 12px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    .timeline {
+    .benefit-item {
       display: flex;
-      overflow-x: auto;
-      padding: 10px 0;
-      gap: 10px;
-      justify-content: center;
-      margin: 20px auto 30px auto;
-      max-width: 1000px;
+      flex-direction: column;
+      align-items: center;
     }
-    .timeline div {
-      background-color: #1976d2;
+    .benefit-item img {
+      width: 32px;
+      margin-bottom: 10px;
+    }
+    .benefit-item p {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.4;
+      max-width: 200px;
+    }
+    .step-box {
+      background-color: #e6f0fb;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 40px auto;
+      max-width: 900px;
+    }
+    .step-box h3 {
+      background-color: #007bff;
       color: white;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 12px;
-      white-space: nowrap;
-      flex-shrink: 0;
+      padding: 8px 16px;
+      border-radius: 5px;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 0;
+    }
+    .step-box img {
+      max-width: 100%;
+      margin-top: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <h1>Guia Rápido - Indicação 99Food</h1>
-  <div class="timeline">
-    <div>1. Acesse "Convidar lojas"</div>
-    <div>2. Copie o código</div>
-    <div>3. Compartilhe (WhatsApp)</div>
-    <div>4. Compartilhe (QR Code)</div>
-    <div>5. Restaurante preenche cadastro</div>
-    <div>6. Insere o código</div>
-  </div>
-  <p class="subtitle">Ganhe R$150 por restaurante indicado!</p>
-
-  <div class="info-box">
-    <strong>Importante:</strong> O código "sq1lhX" é apenas exemplo. Cada parceiro tem seu código único.
+  <div class="hero">
+    <div class="hero-text">
+      Cadastre seu restaurante na<br>
+      <span style="color: black;">99Food e amplie seus negócios</span>
+    </div>
+    <img src="https://brunasouzabot.github.io/BgB/131cc562-5f15-4556-b3c9-2c3d14da6b69.png" alt="Restaurante 99Food" style="max-height: 200px;">
   </div>
 
-  <div class="section-header">PARTE 1: Como indicar um restaurante</div>
-  <div class="step">
-    <strong>1. Acesse "Convidar lojas"</strong>
+  <div class="benefits">
+    <h2>Benefícios da 99Food:</h2>
+    <div class="benefit-grid">
+      <div class="benefit-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/money.png" alt="lucros">
+        <p>Maximize seus lucros com 12 meses de 0 comissão e 0 mensalidade *Consulte os termos e condições</p>
+      </div>
+      <div class="benefit-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/settings.png" alt="flexível">
+        <p>Operações flexíveis</p>
+      </div>
+      <div class="benefit-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/flash.png" alt="rápido">
+        <p>Lançamento rápido</p>
+      </div>
+      <div class="benefit-item">
+        <img src="https://img.icons8.com/ios-filled/50/000000/checked-checkbox.png" alt="tranquilidade">
+        <p>Opere com tranquilidade</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="step-box">
+    <h3>1. Acesse "Convidar lojas"</h3>
     <p>No painel 99Food Admin, clique no botão amarelo no canto direito.</p>
-    <img src="bgb_step_1.png" alt="Passo 1">
-  </div>
-  <div class="step">
-    <strong>2. Copie seu código único</strong>
-    <p>Exemplo: sq1lhX (seu código será diferente).</p>
-    <img src="bgb_step_2.png" alt="Passo 2">
-  </div>
-  <div class="step">
-    <strong>3.1 Via WhatsApp</strong>
-    <p>Clique no ícone do WhatsApp.</p>
-    <img src="bgb_step_3.1.png" alt="Passo 3.1">
-  </div>
-  <div class="step">
-    <strong>3.2 Via WhatsApp</strong>
-    <p>Clique em "Abrir WhatsApp" e envie a mensagem.</p>
-    <img src="bgb_step_3.2.png" alt="Passo 3.2">
-  </div>
-  <div class="step">
-    <strong>4.1 Via QR Code</strong>
-    <p>Clique no ícone de imagem.</p>
-    <img src="bgb_step_4.1.png" alt="Passo 4.1">
-  </div>
-  <div class="step">
-    <strong>4.2 Via QR Code</strong>
-    <p>Este é o seu QR Code. Para: Encontros presenciais - Material impresso - Compartilhamento rápido.</p>
-    <img src="bgb_step_4.2.png" alt="Passo 4.2">
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_1.png" alt="Passo 1">
   </div>
 
-  <div class="section-header">PARTE 2: Como o restaurante indicado usa o código</div>
-  <div class="info-box">
-    <strong>Atenção:</strong> O restaurante precisa copiar o código recebido e seguir os passos abaixo durante o cadastro.
-  </div>
-  <div class="step">
-    <strong>5. Restaurante acessa merchant.99app.com</strong>
-    <p>Preenche o cadastro até a Etapa 4 e clica em "clique aqui para inserir" (no final da página).</p>
-    <img src="bgb_step_5.png" alt="Passo 5">
-  </div>
-  <div class="step">
-    <strong>6. Insere o código e clica OK</strong>
-    <p>Após inserir, a indicação é registrada automaticamente.</p>
-    <img src="bgb_step_6.png" alt="Passo 6">
+  <div class="step-box">
+    <h3>2. Copie o código</h3>
+    <p>Clique em "Gerar código" e copie o código de convite gerado.</p>
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_2.png" alt="Passo 2">
   </div>
 
-  <div class="info-box" style="text-align: center; font-weight: bold; font-size: 16px;">
-    Ganhe R$150 por cada restaurante que se cadastrar com seu código e for aprovado pela plataforma!
+  <div class="step-box">
+    <h3>3. Acesse o link de cadastro</h3>
+    <p>Acesse o link <strong>cadastro.99food.com.br</strong> e inicie o processo de cadastro.</p>
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_3.1.png" alt="Passo 3.1">
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_3.2.png" alt="Passo 3.2">
+  </div>
+
+  <div class="step-box">
+    <h3>4. Complete o cadastro</h3>
+    <p>Preencha os dados da loja, incluindo razão social, CNPJ, endereço e telefone.</p>
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_4.1.png" alt="Passo 4.1">
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_4.2.png" alt="Passo 4.2">
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_4.3.png" alt="Passo 4.3">
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_4.4.png" alt="Passo 4.4">
+  </div>
+
+  <div class="step-box">
+    <h3>5. Cole o código</h3>
+    <p>No final do cadastro, cole o código de convite copiado anteriormente.</p>
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_5.png" alt="Passo 5">
+  </div>
+
+  <div class="step-box">
+    <h3>6. Envio para análise</h3>
+    <p>Finalize o envio e aguarde a aprovação da equipe da 99Food.</p>
+    <img src="https://brunasouzabot.github.io/BgB/bgb_step_6.png" alt="Passo 6">
   </div>
 </body>
 </html>
