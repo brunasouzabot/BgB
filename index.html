@@ -22,22 +22,27 @@
     .alert strong {
       color: #7c0a27;
     }
-    .timeline {
-      background-color: #fff;
-      padding: 16px;
+    .timeline-bar {
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      font-size: 14px;
-      font-weight: bold;
-      color: #333;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 24px;
       border-bottom: 2px solid #eee;
+      overflow-x: auto;
     }
-    .timeline span::before {
-      content: "\25CF";
-      color: #007bff;
-      display: inline-block;
-      margin-right: 6px;
+    .timeline-step {
+      background-color: #2196f3;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      white-space: nowrap;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .timeline-bar > div:not(:last-child) {
+      margin-right: 12px;
     }
     .hero {
       background-color: #FFD700;
@@ -112,13 +117,13 @@
 <body>
   <div class="alert"><strong>Importante:</strong> O código "sq1lhX" é apenas exemplo. Cada parceiro tem seu código único.</div>
 
-  <div class="timeline">
-    <span>1. Acesse "Convidar lojas"</span>
-    <span>2. Copie seu código e envie diretamente</span>
-    <span>3. Ou, copie e envie via WhatsApp</span>
-    <span>4. Ou, salve via QR Code</span>
-    <span>5. Indicado acessa merchant.99app.com</span>
-    <span>6. Indicado insere o código durante o cadastro</span>
+  <div class="timeline-bar">
+    <div class="timeline-step">1. Acesse "Convidar lojas"</div>
+    <div class="timeline-step">2. Copie o código</div>
+    <div class="timeline-step">3. Compartilhe (WhatsApp)</div>
+    <div class="timeline-step">4. Compartilhe (QR Code)</div>
+    <div class="timeline-step">5. Restaurante preenche cadastro</div>
+    <div class="timeline-step">6. Insere o código</div>
   </div>
 
   <div class="hero">
