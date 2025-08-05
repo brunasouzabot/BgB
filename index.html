@@ -62,30 +62,125 @@
       border-radius: 5px;
       margin-top: 10px;
     }
-    .warning {
-      background-color: #E3F2FD;
-      border-left: 4px solid #2196F3;
-      padding: 10px;
-      margin-bottom: 20px;
+    .back-to-top {
+      text-align: right;
+      margin-top: 10px;
+    }
+    .back-to-top a {
+      color: #2196F3;
+      text-decoration: none;
+      font-weight: bold;
     }
     a.anchor-link {
       text-decoration: none;
       color: white;
     }
+    .scroll-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #FFD700;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .scroll-button:hover {
+      background-color: #FFC107;
+    }
+    .scroll-button svg {
+      width: 24px;
+      height: 24px;
+      fill: #000;
+    }
+    .top-menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 30px 0;
+    }
+    .top-menu a {
+      text-decoration: none;
+      text-align: center;
+    }
+    .top-menu .step-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: black;
+    }
+    .top-menu .circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #FFD700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .top-menu .label {
+      background-color: #FFD700;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
   </style>
 </head>
 <body>
+  <a id="top"></a>
   <h1>Guia rápido de indicação 99Food - Indique todos os seus amigos!</h1>
 
-  <div style="margin: 30px 0; overflow-x: auto;">
-    <div style="display: flex; gap: 10px; justify-content: space-between; white-space: nowrap; align-items: center;">
-      <a href="#passo1" class="anchor-link"><div style="background-color: #2196F3; padding: 8px 12px; border-radius: 20px; font-size: 12px; min-width: max-content;">1. Acesse "Convidar lojas"</div></a>
-      <a href="#passo2" class="anchor-link"><div style="background-color: #2196F3; padding: 8px 12px; border-radius: 20px; font-size: 12px; min-width: max-content;">2. Copie o código</div></a>
-      <a href="#passo3" class="anchor-link"><div style="background-color: #2196F3; padding: 8px 12px; border-radius: 20px; font-size: 12px; min-width: max-content;">3. Ou, compartilhe via WhatsApp</div></a>
-      <a href="#passo4" class="anchor-link"><div style="background-color: #2196F3; padding: 8px 12px; border-radius: 20px; font-size: 12px; min-width: max-content;">4. Ou, compartilhe via QR Code</div></a>
-      <a href="#passo5" class="anchor-link"><div style="background-color: #2196F3; padding: 8px 12px; border-radius: 20px; font-size: 12px; min-width: max-content;">5. Indicado preenche o cadastro</div></a>
-      <a href="#passo6" class="anchor-link"><div style="background-color: #2196F3; padding: 8px 12px; border-radius: 20px; font-size: 12px; min-width: max-content;">6. Indicado insere o código</div></a>
-    </div>
+  <div class="top-menu">
+    <a href="#passo1" class="anchor-link">
+      <div class="step-box">
+        <div class="circle">1</div>
+        <img src="xgr_bgb_icons_step_1.png" width="50" height="50" alt="Ícone passo 1">
+        <div class="label">Acesse "Convidar lojas"</div>
+      </div>
+    </a>
+    <a href="#passo2" class="anchor-link">
+      <div class="step-box">
+        <div class="circle">2</div>
+        <img src="xgr_bgb_icons_step_2.png" width="50" height="50" alt="Ícone passo 2">
+        <div class="label">Copie o código</div>
+      </div>
+    </a>
+    <a href="#passo3" class="anchor-link">
+      <div class="step-box">
+        <div class="circle">3</div>
+        <img src="xgr_bgb_icons_step_3_4.png" width="50" height="50" alt="Ícone passo 3 e 4">
+        <div class="label">Compartilhe via WhatsApp</div>
+      </div>
+    </a>
+    <a href="#passo4" class="anchor-link">
+      <div class="step-box">
+        <div class="circle">4</div>
+        <img src="xgr_bgb_icons_step_3_4.png" width="50" height="50" alt="Ícone passo 3 e 4">
+        <div class="label">Compartilhe via QR Code</div>
+      </div>
+    </a>
+    <a href="#passo5" class="anchor-link">
+      <div class="step-box">
+        <div class="circle">5</div>
+        <img src="xgr_bgb_icons_step_5.png" width="50" height="50" alt="Ícone passo 5">
+        <div class="label">Indicado preenche o cadastro</div>
+      </div>
+    </a>
+    <a href="#passo6" class="anchor-link">
+      <div class="step-box">
+        <div class="circle">6</div>
+        <img src="xgr_bgb_icons_step_6.png" width="50" height="50" alt="Ícone passo 6">
+        <div class="label">Indicado insere o código</div>
+      </div>
+    </a>
   </div>
 
   <p class="subtitle">Ganhe R$150 por restaurante indicado!</p>
@@ -100,33 +195,13 @@
   <div class="section-header">PARTE 1: Como indicar um restaurante</div>
   <div class="step" id="passo1">
     <strong>1. Acesse "Convidar lojas"</strong>
-    <p>No painel 99Food Admin, clique no botão amarelo no canto direito.</p>
+    <p>No Painel <a href="https://merchant.99app.com/pt-BR/manager/store" target="_blank">99Food Admin</a>, clique no botão amarelo no canto direito.</p>
     <img src="bgb_step_1.png" alt="Passo 1">
   </div>
   <div class="step" id="passo2">
     <strong>2. Copie seu código único</strong>
     <p>Exemplo: sq1lhX (seu código será diferente).</p>
     <img src="bgb_step_2.png" alt="Passo 2">
-  </div>
-  <div class="step" id="passo3">
-    <strong>3.1 Via WhatsApp</strong>
-    <p>Clique no ícone do WhatsApp.</p>
-    <img src="bgb_step_3.1.png" alt="Passo 3.1">
-  </div>
-  <div class="step">
-    <strong>3.2 Via WhatsApp</strong>
-    <p>Clique em "Abrir WhatsApp" e envie a mensagem.</p>
-    <img src="bgb_step_3.2.png" alt="Passo 3.2">
-  </div>
-  <div class="step" id="passo4">
-    <strong>4.1 Via QR Code</strong>
-    <p>Clique no ícone de imagem.</p>
-    <img src="bgb_step_4.1.png" alt="Passo 4.1">
-  </div>
-  <div class="step">
-    <strong>4.2 Via QR Code</strong>
-    <p>Este é o seu QR Code. Para: Encontros presenciais - Material impresso - Compartilhamento rápido.</p>
-    <img src="bgb_step_4.2.png" alt="Passo 4.2">
   </div>
 
   <div class="section-header">PARTE 2: Como o restaurante indicado usa o código</div>
@@ -147,5 +222,11 @@
   <div class="info-box" style="text-align: center; font-weight: bold; font-size: 16px;">
     Ganhe R$150 por cada restaurante que se cadastrar com seu código e for aprovado pela plataforma!
   </div>
+
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="scroll-button" aria-label="Voltar ao topo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+    </svg>
+  </button>
 </body>
 </html>
